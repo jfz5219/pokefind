@@ -1,0 +1,59 @@
+.map-image-example{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Right column styles */
+.encounter-container .info-container {
+    flex: 0 0 50%; /* Equivalent to col-md-6 in Bootstrap */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .find-pokemon-container{
+    background-color: var(--secondary);
+  }
+  .pokemon-encounter-container{
+    flex-direction: row-reverse;
+    background-color: var(--secondary);
+  }
+
+  /* For small screens */
+@media (max-width: 768px) {
+  .find-pokemon-container{
+    padding: 2rem;
+  }
+  .find-pokemon-container >div:first-child{
+    padding-bottom: 1.5rem;
+  }
+  .pokemon-encounter-container{
+    padding: 2rem;
+  }
+  .pokemon-encounter-container >div:first-child{
+    padding-bottom: 1.5rem;
+  }
+}
+
+  
+  /* Centered text styles */
+  .encounter-container .info-container .text-center {
+    text-align: center;
+  }
+  
+  .encounter-container .info-container h1 {
+    margin: 0;
+  }
+  
+  .encounter-container .info-container p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Button styles */
+  .encounter-container .info-container button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }

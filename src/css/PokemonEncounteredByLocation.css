@@ -1,0 +1,114 @@
+.location-area-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-area-btn.active{
+    border: #ffffff5c solid 3px;
+    color: #e6e6e6;
+    background: var(--red);
+    cursor: default;
+}
+
+.location-area-btn{
+    border-radius: 5px;
+    background-color: var(--fifth);
+    border: #2b3035 solid 3px;
+    width: 48%;
+    padding: 5px;
+    margin: 1%;
+    max-height: 45px;
+    white-space: nowrap; 
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.location-area-btn:not(.active):hover{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.location-area-container > .many.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.location-area-container > .one.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.one.container button{
+    width: 100%;
+}
+/* For large screens */
+@media (min-width: 992px) {
+    .location-area-container .container{
+        max-width: 750px !important;
+    }
+}
+
+
+/* Pokemon in area container styling */
+.pokemon-in-area.evolution-container {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.pokemon-gallery{
+    padding: 0px !important;
+    width: 100%;
+    margin: auto;
+}
+
+.pokemon-gallery > li{
+    display: block;
+    float: left;
+    position: relative;
+    padding: 1% 2.5% 0 2.5%;
+    width: 20%;
+}
+
+.area-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .pokemon-gallery > li{
+        display: block;
+        float: left;
+        position: relative;
+        padding: 1% 4%;
+        width: 33.333%;
+    }
+
+    .area-btn-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .area-btn-container > .location-area-btn{
+        width: 100% !important;
+    } 
+}
+
+li > .pokemon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 !important;
+}
+.pokemon-container > .img-frame{
+    width: 100%;
+    height: 100%;
+}
+.pokemon-container > .img-frame >img{
+    width: 100%;
+    height: 100%;
+    scale: 1 !important;
+}
