@@ -1,4 +1,4 @@
-import LoadIcon from '../load_icon.png'
+import LoadIcon from '../images/load_icon.png'
 import '../css/Loading.css'
 
 export default function Loading() {

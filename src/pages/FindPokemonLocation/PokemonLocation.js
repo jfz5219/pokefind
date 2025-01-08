@@ -5,7 +5,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Overlay from 'react-bootstrap/Overlay';
 import'../../css/map.css'; 
 import KantoMap from '../../map/kanto_map.jpg'; 
-import PinIcon from '../../map_pin_icon.png'
+import PinIcon from '../../map/map_pin_icon.png'
 import Loading from '../Loading';
 import { ReactComponent as ClickableCoordinates } from '../../map/clickable_coordinates.svg';
 import { EvolutionChainLocation } from './EvolutionChainLocation';

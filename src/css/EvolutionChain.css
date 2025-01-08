@@ -79,7 +79,7 @@ margin: 0 10px;
   /* For small screens */
 @media (max-width: 576px) {
     .evo-arrow::before {
-        content: url('C:\Web Dev Practice\pokefind\src\images\to_bottom_arrow.png') !important;
+        content: url('../images/to_bottom_arrow.png') !important;
         position: relative ;
         padding-bottom: 20px ;
         scale: 0.5;
@@ -87,7 +87,7 @@ margin: 0 10px;
     }
 
     .group-arrow::after {
-        content: url('C:\Web Dev Practice\pokefind\src\images\to_bottom_arrow.png');
+        content: url('../images/to_bottom_arrow.png');
         position: relative;
         padding-bottom: 20px;
         scale: 0.5;
@@ -127,7 +127,7 @@ margin: 0 10px;
 /* Every screen size above 577px */
   @media (min-width: 577px) {
 .evo-arrow::before {
-    content: url('C:\Web Dev Practice\pokefind\src\images\to_right_arrow.png');
+    content: url('../images/to_right_arrow.png');
     position: relative;
     padding-bottom: 20px;
     scale: 0.5;
@@ -135,7 +135,7 @@ margin: 0 10px;
 }
 
 .group-arrow::after {
-    content: url('C:\Web Dev Practice\pokefind\src\images\to_right_arrow.png');
+    content: url('../images/to_right_arrow.png');
     position: relative;
     padding-bottom: 20px;
     padding-left: 20px;
