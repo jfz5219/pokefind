@@ -27,7 +27,11 @@
 table td, table th {
     vertical-align: middle; 
   }
-table th{
+  
+.pokedex-results th, .pokedex-results .table-name{
+    padding-left: 15px !important;
+}
+.move-table .th-level{
     padding-left: 15px !important;
 }
 
@@ -105,6 +109,27 @@ table th{
     .name-img-container > .image {
         width: 250px;
     }
+
+}
+
+/* For small screens that can't fit the end type column */
+@media (max-width: 500px) {
+
+    .table-number, .th-number {
+        display: none;
+    }
+    .type-container > div {
+        width: 60px;
+        font-size: smaller;
+    }    
+    .move-table{
+        font-size: smaller;
+    }
+    .move-table .th-level{
+        padding-left: 5px !important;
+    }
+    
+    
 }
 
 

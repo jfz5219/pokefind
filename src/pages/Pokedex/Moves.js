@@ -55,10 +55,10 @@ export default function Moves({moves}) {
         {all_moves_details && 
 
         <div className='move-container table-responsive'>
-        <table class="table table-sm table-striped table-dark">
+        <table class="move-table table table-sm table-striped table-dark">
             <thead>
                 <tr>
-                    <th scope="col">Lv.</th>
+                    <th scope="col" className='th-level'>Lv.</th>
                     <th scope="col">Name</th>
                     <th scope="col">Accuracy</th>
                     <th scope="col">Power</th>
@@ -71,7 +71,7 @@ export default function Moves({moves}) {
             return(     
                 
                     <tr key={move.name}>
-                        <th scope="row">{move.level_learned_at}</th>
+                        <th scope="row" className='th-level'>{move.level_learned_at}</th>
                         <td>{move.name}</td>
                         <td>{move.accuracy}</td>
                         <td>{move.power}</td>

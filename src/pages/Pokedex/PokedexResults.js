@@ -13,17 +13,17 @@ export default function PokedexResults({pokedex_results}) {
     <table class="pokedex-results table table-sm table-dark">
     <thead>
         <tr>
-        <th scope="col">No.</th>
+        <th scope="col" className='th-number'>No.</th>
         <th scope="col">Name</th>
         <th scope="col">Image</th>
-        <th scope="col">Type</th>           
+        <th scope="col" className='th-type'>Type</th>           
         </tr>
     </thead>
     <tbody>
         {pokedex_results && pokedex_results.map(pokemon =>{
             return(<tr key={pokemon.index} className='hover-active' onClick={()=>{navigate(`/pokedex/${pokemon.name}`)}}>
-                        <th scope="row">{pokemon.index}</th>
-                        <td>{pokemon.name}</td>
+                        <th scope="row" className='table-number'>{pokemon.index}</th>
+                        <td className='table-name'>{pokemon.name}</td>
                         <td className='table-image'><img src={pokemon.image} alt={`${pokemon.name} sprite`} loading="lazy" ></img></td>
                         <td className='table-type'>
                             <div className='type-container'>

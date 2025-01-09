@@ -120,7 +120,9 @@ console.log(previousLocationPathname)
     </>
     }
 
-    {stats && <div className='secondary-color-op col-md-12 mt-4 flex-fill  p-4'><table className='w-100 stat-table'><tbody className='mb-3'>{stats.map(stat =>{
+    {stats && <div className='secondary-color-op col-md-12 mt-4 flex-fill  p-4'>
+      
+      <table className='w-100 stat-table'><tbody className='mb-3'>{stats.map(stat =>{
       return (   
         <tr>
               <th className='mb-0'>{stat.stat_name}</th>
@@ -131,7 +133,9 @@ console.log(previousLocationPathname)
               </td>
         </tr>
       )
-    })}</tbody></table></div>}
+    })}</tbody></table>
+    
+    </div>}
 
     {evolution_chain_url && <EvolutionChainLocation pokemon_name={pokemon_name} evolution_chain_url={evolution_chain_url}/>}
     
